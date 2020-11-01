@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>momentum</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather__row">
+        <div class="search__city">
+          Ваш город:
+          <p class="city" contenteditable="true"></p>
+        </div>
+        <div class="city__weather">
+          <div class="weather__info">
+            <div class="weather__title">
+              <i class="weather-icon owf"></i>
+              <span class="weather-description"></span>
+              <p class="temperature"></p>
+            </div>
+            <div class="weather__title">
+              <p class="wind"></p>
+            </div>
+            <div class="weather__title">
+              <p class="humidity"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timezone">
+        <div id="date"></div>
+        <div id="time"></div>
+        <h1>
+          <span id="greeting"></span>
+          <span id="name" contenteditable="true"></span>
+        </h1>
+        <h2>Какая цель сегодня?</h2>
+        <h2 id="focus" contenteditable="true"></h2>
+      </div>
+      <div class="btn__wrapper">
+        <button class="btn">
+          <span class="material-icons"> loop </span>
+        </button>
+        <button class="btn btn__quote">
+          <span class="material-icons"> loop </span>
+        </button>
+      </div>
+      <figure class="quote">
+        <blockquote>
+          You were not born a winner, and you were not born a loser. You are
+          what you make yourself be.
+        </blockquote>
+        <figcaption>Lou Holtz</figcaption>
+      </figure>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
